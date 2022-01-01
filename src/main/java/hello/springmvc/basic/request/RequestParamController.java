@@ -79,4 +79,8 @@ public class RequestParamController {
         return "ok";
     }
 
+    @ResponseBody
+    @RequestMapping("/model-attribute-v1")
+    public String modelAtrributeV1(@Requ)
+
 }

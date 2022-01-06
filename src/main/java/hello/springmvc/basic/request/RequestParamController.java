@@ -17,6 +17,7 @@ import java.util.Map;
 @Controller
 public class RequestParamController {
 
+    @ResponseBody
     @RequestMapping("/request-param-v1")
     public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
@@ -89,7 +90,7 @@ public class RequestParamController {
     }
 
     @ResponseBody
-    @RequestMapping("/model-attribute-v1")
+    @RequestMapping("/model-attribute-v2")
     public String modelAtrributeV2(HelloData helloData) {
         log.info("usernam0e={}, age={}", helloData.getUsername(), helloData.getAge());
         return  "ok";
